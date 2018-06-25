@@ -7,12 +7,16 @@ from __future__ import print_function
 from datetime import datetime
 import math
 import time
+import sys, os
 
 import numpy as np
 import tensorflow as tf
 
-import alexnet
-import cifar10
+sys.path.append(os.path.dirname(os.getcwd()))
+sys.path.append(os.getcwd())
+
+from models import alexnet
+from data import cifar10
 
 
 

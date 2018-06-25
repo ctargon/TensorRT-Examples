@@ -7,11 +7,14 @@ import tarfile
 from six.moves import urllib
 import tensorflow as tf
 
-from helpers import _activation_summary, \
+sys.path.append(os.path.dirname(os.getcwd()))
+sys.path.append(os.getcwd())
+
+from utils.helpers import _activation_summary, \
 					_variable_on_cpu, \
 					_variable_with_weight_decay
 
-import cifar10
+from data import cifar10
 
 FLAGS = tf.app.flags.FLAGS
 
